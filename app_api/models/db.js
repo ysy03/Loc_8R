@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const dbURL = 'mongodb://127.0.0.1:27017/Loc8r';
 mongoose.connect(dbURL,{useNewUrlParser: true});
-
+mongoose.set('strictQuery', true);
 mongoose.connection.on('connected',function(){
     console.log(`Mongoose connected to ${dbURL} 2021810042-유승엽`);
 });
