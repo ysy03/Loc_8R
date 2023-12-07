@@ -5,7 +5,7 @@ const apiOption = {
 };
 
 if(process.env.NODE_ENV === "production"){
-    apiOption.server = "https://loc-8r-api.onrender.com";
+    apiOption.server = "https://loc8r-data.onrender.com";
 }
 
 const formatDistance = (distance)=>{
